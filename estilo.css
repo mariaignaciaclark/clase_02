@@ -28,20 +28,22 @@ body {
   overflow-x: hidden;
   /* a continuación llamaré a la animación definada más arriba */
   animation-name: agua; 
-  animation-duration: 5s;
-  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   /* más sobre animación en https://developer.mozilla.org/es/docs/Web/CSS/animation */
 }
 
 a{
-  color:#222;
+  color:#f00;
   transition: all ease 1s;
 }
 
 a:hover{
-  color:#000;
+  color:#0f0;
+  background: black;
+  margin: 05rem;
   text-decoration: none;
 }
 
@@ -61,7 +63,7 @@ pre{
 pre:hover{
   background:rgba(255,255,255,0.4);
   transition: background ease 1s;
-  cursor:crosshair;
+  cursor:pointer;
 }
 
 code{
